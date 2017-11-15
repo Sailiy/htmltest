@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/* 纵向滚动 */
+		.scrollY {
+			border: 1px solid red;
+			padding: 5px;
+			width: 200px;
+			height: 200px;
+			overflow-y:scroll;
+		}
+		.scrollY .wrapper{
+			border: 1px solid black;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		/* 横向滚动 */
+		.scrollX {
+			border: 1px solid red;
+			padding: 5px;
+			width: 200px;
+			height: 200px;
+			overflow-x:scroll;
+		}
+		.scrollX .wrapper{
+			height: 100%;
+			width: 100%;
+			border: 1px solid black;
+			display: inline-flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		/* item */
+		.wrapper div{
+			margin: 10px;
+			width: 60px;
+			height: 60px;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="scrollY">
+		<div class="wrapper">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<br>
+	<div class="scrollX">
+		<div class="wrapper">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+</body>
+</html>
+
+
